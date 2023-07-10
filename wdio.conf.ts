@@ -33,12 +33,13 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.ts'
+        //'./test/specs/**/*.ts'
        //'./test/specs/**/*saucedemo.login.ts'
        //'./test/specs/**/*all_elements.ts'
       // './test/specs/**/*example.e2e.ts'
       //'./test/specs/**/*wait_elements.ts'
       //'./test/specs/**/*dropdown_examples.ts'
+      './test/specs/**/*Webtable_Test_01.ts'
     ],
     // Patterns to exclude.
     exclude: [
