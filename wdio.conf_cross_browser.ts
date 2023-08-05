@@ -74,6 +74,7 @@ export const config: Options.Testrunner = {
             // capabilities for local browser web tests
             maxInstances: 5,
             browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
+            browserVersion: 'stable',
             acceptInsecureCerts: true
         },
         {
@@ -86,6 +87,7 @@ export const config: Options.Testrunner = {
             // capabilities for local browser web tests
             maxInstances: 5,
             browserName: 'MicrosoftEdge', // or "firefox", "microsoftedge", "safari"
+            browserVersion: 'stable',
             acceptInsecureCerts: true
         }
     ],
@@ -136,7 +138,7 @@ export const config: Options.Testrunner = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver','geckodriver' ,'edgedriver'],
+   services: ['geckodriver'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
